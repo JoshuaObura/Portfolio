@@ -1,8 +1,8 @@
 // Specific CSS for your home-page
 .text-container{
   padding-top: 30px;
-  padding-left:30%;
-  padding-right:30%;
+  padding-left:10%;
+  padding-right:10%;
   text-align:center;
   padding-bottom:80px;
 }
@@ -13,4 +13,8 @@
 
 #home-link{
   color:black;
+}
+
+.link{
+  z-index:100
 }
