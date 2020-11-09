@@ -4,92 +4,38 @@
 const channels = require.context('.', true, /_channel\.js$/)
 channels.keys().forEach(channels)
 
-$('.slider').each(function() {
-  var $this = $(this);
-  var $group = $this.find('.slide_group');
-  var $slides = $this.find('.slide');
-  var bulletArray = [];
-  var currentIndex = 0;
-  var timeout;
+/* EFFET SMOOTH SCOLL */
+$("a[href^='#']").click(function (e) {
+  var 
+    yPos,
+    yInitPos,
+    target = ($($(this).attr("href") + ":first"));
+    
+  e.preventDefault(); 
   
-  function move(newIndex) {
-    var animateLeft, slideLeft;
-    
-    advance();
-    
-    if ($group.is(':animated') || currentIndex === newIndex) {
-      return;
-    }
-    
-    bulletArray[currentIndex].removeClass('active');
-    bulletArray[newIndex].addClass('active');
-    
-    if (newIndex > currentIndex) {
-      slideLeft = '100%';
-      animateLeft = '-100%';
-    } else {
-      slideLeft = '-100%';
-      animateLeft = '100%';
-    }
-    
-    $slides.eq(newIndex).css({
-      display: 'block',
-      left: slideLeft
-    });
-    $group.animate({
-      left: animateLeft
-    }, function() {
-      $slides.eq(currentIndex).css({
-        display: 'none'
-      });
-      $slides.eq(newIndex).css({
-        left: 0
-      });
-      $group.css({
-        left: 0
-      });
-      currentIndex = newIndex;
-    });
+  yInitPos = $(window).scrollTop();
+  
+  window.location.hash = $(this).attr("href");
+  
+ 
+  $(window).scrollTop(yInitPos);
+
+  target = ($($(this).attr("href") + ":first"));
+
+  if (target.length == 0) {
+    target = ($("a[name=" + $(this).attr("href").replace(/#/gi,"") + "]:first"))
   }
   
-  function advance() {
-    clearTimeout(timeout);
-    timeout = setTimeout(function() {
-      if (currentIndex < ($slides.length - 1)) {
-        move(currentIndex + 1);
-      } else {
-        move(0);
-      }
-    }, 4000);
+  if (target.length == 1) {
+    yPos = target.offset().top;
+  
+    if (window.matchMedia ('(min-width: 1000px)').matches)
+    {
+      $('html,body').animate({ scrollTop: yPos - 60 }, 1000);
+    }
+    else
+    {
+      $('html,body').animate({ scrollTop: yPos - 60 }, 1000);
+    }
   }
-  
-  $('.next_btn').on('click', function() {
-    if (currentIndex < ($slides.length - 1)) {
-      move(currentIndex + 1);
-    } else {
-      move(0);
-    }
-  });
-  
-  $('.previous_btn').on('click', function() {
-    if (currentIndex !== 0) {
-      move(currentIndex - 1);
-    } else {
-      move(3);
-    }
-  });
-  
-  $.each($slides, function(index) {
-    var $button = $('<a class="slide_btn">&bull;</a>');
-    
-    if (index === currentIndex) {
-      $button.addClass('active');
-    }
-    $button.on('click', function() {
-      move(index);
-    }).appendTo('.slide_buttons');
-    bulletArray.push($button);
-  });
-  
-  advance();
 });
