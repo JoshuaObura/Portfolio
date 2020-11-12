@@ -1,34 +1,43 @@
 <div id="home">
-<div class ="text-container">
-  <div class = "header-text">
-          <h1>Joshua Howitt</h1>
-          <p>Hi there, my name is Josh and welcome to my portfolio.
-            I am a Full Stack developer based in Kent, please feel free to take a look
-            at my previous work or get in touch via my details below.</p>
+ <div data-aos="fade-up" data-aos-duration="3000">
+    <div class ="text-container">
+      <div class = "header-text">
+              <h1>Joshua Howitt</h1>
+              <p>Hi there, my name is Josh and welcome to my portfolio.
+                I am a Full Stack developer based in Kent, please feel free to take a look
+                at my previous work or get in touch via my details below.</p>
+      </div>
+    </div>
   </div>
 </div>
 <div id="projects">
+  <p class="title"> Projects </p>
     <div class="project-container">
-          <%= link_to "The Healthy Hair Hub","http://www.thehealthyhairhub.com/", target: :_blank %>
+  <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1500">
+      <h2>The Healthy Hair Hub</h2>
       <div class="macbook">
         <div class="screen">
           <div class="viewport" style="background-image:url('https://res.cloudinary.com/joshuaobura/image/upload/v1605121024/screencapture-thehealthyhairhub-contents-2020-11-11-18_44_26_jctdsy.jpg');">
+          <% link_to "http://www.thehealthyhairhub.com/", class: "project-link", target: :_blank %>
           </div>
         </div>
           <div class="base"></div>
           <div class="notch"></div>
-        </div>
+      </div>
     </div>
+  </div>
     <div class="project-container">
+      <div data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1500">
       <h2>Tool Box</h2>
-      <div class="macbook">
-        <div class="screen">
-          <div class="viewport" style="background-image:url('https://res.cloudinary.com/joshuaobura/image/upload/v1605121314/screencapture-opentoolbox-joshuaobura-herokuapp-tools-30-2020-11-11-19_01_32_fpqktz.jpg');">
+        <div class="macbook">
+          <div class="screen">
+            <div class="viewport" style="background-image:url('https://res.cloudinary.com/joshuaobura/image/upload/v1605121314/screencapture-opentoolbox-joshuaobura-herokuapp-tools-30-2020-11-11-19_01_32_fpqktz.jpg');">
+            </div>
           </div>
+            <div class="base"></div>
+            <div class="notch"></div>
         </div>
-          <div class="base"></div>
-          <div class="notch"></div>
-        </div>
+      </div>
     </div>
 </div>
 <div id="resume">
@@ -36,4 +45,3 @@
 
 <div id="contact">
 </div>
-        
