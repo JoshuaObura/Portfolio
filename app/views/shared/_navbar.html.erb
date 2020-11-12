@@ -1,10 +1,12 @@
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <%= image_tag "https://res.cloudinary.com/wagon/image/upload/c_fill,g_face,h_200,w_200/v1601291719/jnhtilfrjtrqjrwmwzug.jpg", class: "profile-img" %>
   <%= link_to "Home", "#home", class: "nav-link scrollTo" %>
-  <%= link_to "Resume", "#resume", class: "nav-link scrollTo"%>
   <%= link_to "Projects", "#projects", class: "nav-link scrollTo"%>
+  <%= link_to "Resume", "#resume", class: "nav-link scrollTo"%>
+  <%= link_to "Contact", "#contact", class: "nav-link scrollTo"%>
 </div>
-<span style="font-size:30px;cursor:pointer;margin-left:30px;" onclick="openNav()">&#9776; navigation</span>
+<span style="font-size:30px;cursor:pointer;margin-left:30px;" onclick="openNav()">&#9776;</span>
 
 <script>
 function openNav() {
