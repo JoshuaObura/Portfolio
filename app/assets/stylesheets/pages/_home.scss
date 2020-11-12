@@ -1,16 +1,30 @@
 // Specific CSS for your home-page
 .text-container{
-  padding-top: 30px;
-  padding-left:10%;
-  padding-right:10%;
-  text-align:center;
-  padding-bottom:80px;
+  height: 100vh;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
 }
 
-#home-text{
-  padding-bottom:30px;
+.header-text{
+  text-align: center;
+  padding-left: 25%;
+  padding-right: 25%;
 }
 
 #home-link{
   color:black;
+}
+
+body{
+color:white;
+background: rgb(5,107,129);
+background: linear-gradient(180deg, rgba(5,107,129,1) 37%, rgba(27,129,133,1) 51%, rgba(24,104,112,1) 66%, rgba(27,119,140,1) 77%, rgba(42,128,129,1) 94%);}
+
+h1{
+  font-size:5.5rem;
+}
+
+.project-container{
+  text-align: center;
 }
