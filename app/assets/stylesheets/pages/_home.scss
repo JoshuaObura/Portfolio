@@ -33,7 +33,7 @@ h1{
 }
 
 #resume{
-  min-height: 100vh;
+  min-height: 80vh;
   width: 80vw;
   margin: 0 auto;
 }
@@ -44,4 +44,16 @@ h1{
 
 .section{
   padding-top: 5%;
+}
+
+.email{
+  position: relative;
+  top: 0;
+  transition: top ease 0.5s;
+  font-size: 60px;
+  color: white;
+}
+
+.email:hover{
+  top: -10px;
 }
