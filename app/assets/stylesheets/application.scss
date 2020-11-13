@@ -12,9 +12,9 @@
 @import "components/index";
 @import "pages/index";
 
-
 body{
-  background-color: #3C3C3C;
-  transition: background-color .5s;
-  max-width:100%;
+  color:white;
+  background: rgb(5,107,129);
+  background: linear-gradient(180deg, rgba(5,107,129,1) 37%, rgba(27,129,133,1) 51%, rgba(24,104,112,1) 66%, rgba(27,119,140,1) 77%, rgba(42,128,129,1) 94%);
 }
+  

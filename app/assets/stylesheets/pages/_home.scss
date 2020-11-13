@@ -17,20 +17,31 @@
   color:black;
 }
 
-body{
-color:white;
-background: rgb(5,107,129);
-background: linear-gradient(180deg, rgba(5,107,129,1) 37%, rgba(27,129,133,1) 51%, rgba(24,104,112,1) 66%, rgba(27,119,140,1) 77%, rgba(42,128,129,1) 94%);}
-
 h1{
   font-size:5.5rem;
 }
 
 .project-container{
   text-align: center;
+  padding-left: 20%;
+  padding-right: 20%;
 }
 
 .title{
   text-align:center;
   font-size: 50px;
+}
+
+#resume{
+  min-height: 100vh;
+  width: 80vw;
+  margin: 0 auto;
+}
+
+.resume-info{
+  padding-top: 5%;
+}
+
+.section{
+  padding-top: 5%;
 }
