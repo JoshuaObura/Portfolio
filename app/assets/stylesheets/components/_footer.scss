@@ -6,8 +6,12 @@
   background-color: #2a8081;
   z-index:1000;
   color: white;
-  padding-left: 20%;
-  padding-right: 20%;
+  padding-left: 1%;
+}
+@media (min-width: 900px){
+  .footer{
+    padding-left: 10%;
+  }
 }
 .footer-links {
   /* display: flex; */
