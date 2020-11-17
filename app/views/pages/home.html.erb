@@ -14,7 +14,7 @@
   <p class="title"> Projects </p>
     <div class="project-container">
       <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1500">
-          <h2>The Healthy Hair Hub</h2>
+          <h2><%= link_to 'The Healthy Hair Hub', 'http://www.thehealthyhairhub.com/', target: :_blank, class: "project-link" %></h2>
           <div class="macbook">
             <div class="screen">
               <div class="viewport" style="background-image:url('https://res.cloudinary.com/joshuaobura/image/upload/v1605121024/screencapture-thehealthyhairhub-contents-2020-11-11-18_44_26_jctdsy.jpg');">
@@ -23,14 +23,15 @@
               <div class="base"></div>
               <div class="notch"></div>
             </div>
-        <p> A web app where you can look up tutorials on how to style Afro-carribean hair/read blogs about maintaining your current style.
-        A team of myself and 3 others worked together on this project over the course of 9 days. Built using Ruby on Rails</p>
+        <p class="project-text"> The Healthy Hair Hub was a project Idea I pitched during the Lewagon Bootcamp, It was a project myself and a team of 3 others
+        completed over the course of 8 working days, created predominantly using Ruby on Rails and is hosted on Heroku. It features image/ video uploads, favoriting,
+        chatrooms, user login and other functions.</p>
           </div>
       </div>
     </div>
     <div class="project-container">
       <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1500">
-      <h2>Tool Box</h2>
+      <h2><%= link_to 'Open Tool box', 'https://opentoolbox-joshuaobura.herokuapp.com/', target: :_blank, class: "project-link" %></h2>
         <div class="macbook">
           <div class="screen">
             <div class="viewport" style="background-image:url('https://res.cloudinary.com/joshuaobura/image/upload/v1605121314/screencapture-opentoolbox-joshuaobura-herokuapp-tools-30-2020-11-11-19_01_32_fpqktz.jpg');">
@@ -39,8 +40,25 @@
             <div class="base"></div>
             <div class="notch"></div>
           </div>
-      <p>A 5 day project created to help homeowners or renters in cities rent tools
-      for home improvement or work. Built using Ruby on Rails and Javascript.</p>
+      <p class="project-text">A 4 day project created to help homeowners or renters in cities rent tools
+      for home improvement or work. Built using Ruby on Rails and Javascript. Utilising a MapBox api you can see where
+      specific tools are with user images hosted on cloudinary.</p>
+        </div>
+      </div>
+    </div>
+      <div class="project-container">
+      <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1500">
+      <h2><%= link_to 'Budgeting App', 'https://github.com/JoshuaObura/budget-app', target: :_blank, class: "project-link" %></h2>
+        <div class="macbook">
+          <div class="screen">
+            <div class="viewport" style="background-image:url('https://res.cloudinary.com/joshuaobura/image/upload/v1605617103/budget-app_kvdeue.jpg');">
+            </div>
+          </div>
+            <div class="base"></div>
+            <div class="notch"></div>
+          </div>
+      <p class="project-text">A small project to familiarise myself with Angular.JS and Typescript plus help me keep track of Lockdown finances.
+      </p>
         </div>
       </div>
     </div>
@@ -129,7 +147,16 @@
 <div id="contact">
   <div class="project-container">
     <p class="title"> contact </p>
-    <h5>Please feel free to get in touch via the link below</h5>
+    <h5>Please feel free to get in touch with me via the link below</h5>
     <a href="mailto:oluashegun@googlemail.com?subject=Contact via Website"><i class="far fa-envelope email"></i></a>
+    <p class="project-text"> If email Isn't your thing you can find me on Linkedin or check out my git hub using the links below. </p>
+     <div class="contact-link-container">
+      <div class="contact-link1">
+      <a href="https://github.com/JoshuaObura" target="_blank"><i class="fab fa-github github"></i></a>
+      </div>
+      <div class="contact-link2">
+      <a href= "https://www.linkedin.com/in/joshua-howitt-b9285b170/" target="_blank"><i class="fab fa-linkedin linkedin"></i></a>
+      </div>
+    </div>
   </div>
 </div>

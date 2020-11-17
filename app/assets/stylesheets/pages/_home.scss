@@ -21,6 +21,10 @@ h1{
   font-size:5.5rem;
 }
 
+h5{
+  padding-bottom: 20px;
+}
+
 .project-container{
   text-align: center;
   padding-left: 20%;
@@ -40,6 +44,7 @@ h1{
 
 .resume-info{
   padding-top: 5%;
+  height: 100vh;
 }
 
 .section{
@@ -52,6 +57,7 @@ h1{
   transition: top ease 0.5s;
   font-size: 60px;
   color: white;
+  padding-bottom: 20px;
 }
 
 .email:hover{
@@ -61,3 +67,62 @@ h1{
 #contact{
   height:70vh;
 }
+
+.project-text{
+  padding: 30px;
+}
+
+.project-link{
+  position: relative;
+  top:0;
+  transition: top ease 0.5s;
+  color: white;
+}
+
+.project-link:hover{
+  top:-10px;
+  color: white;
+}
+
+.contact-link-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  
+}
+    .contact-link1{
+      font-size: 50px;
+      position: relative;
+      top: 0;
+      transition: top ease 0.5s;
+      color: white;
+      padding-bottom: 20px;
+      padding-right: 20px;
+    }
+      .contact-link1:hover{
+        top: -10px;
+        color: white;
+      }
+
+      .contact-link2{
+        font-size: 50px;
+        position: relative;
+        top: 0;
+        transition: top ease 0.5s;
+        color: white;
+        padding-bottom: 20px;
+        padding-right: 20px;
+      }
+        .contact-link2:hover{
+          top: -10px;
+          color: white;
+        }
+    
+    .linkedin{
+      color: white;
+    }
+
+    .github{
+      color: white;
+    }
