@@ -14,7 +14,11 @@
 
 body{
   color:white;
-  background: rgb(5,107,129);
-  background: linear-gradient(180deg, rgba(5,107,129,1) 37%, rgba(27,129,133,1) 51%, rgba(24,104,112,1) 66%, rgba(27,119,140,1) 77%, rgba(42,128,129,1) 94%);
+  background: rgb(217,113,183);
+  background: radial-gradient(circle, rgba(217,113,183,1) 0%, rgba(252,207,108,1) 100%);
+/*   background: rgb(5,107,129);
+  background: linear-gradient(180deg, rgba(5,107,129,1) 37%, rgba(27,129,133,1) 51%, rgba(24,104,112,1) 66%, rgba(27,119,140,1) 77%, rgba(42,128,129,1) 94%); */
+/*   background: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100 */
 }
   
