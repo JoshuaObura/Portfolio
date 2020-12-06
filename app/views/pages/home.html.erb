@@ -1,15 +1,35 @@
 <div id="home">
- <div data-aos="fade-up" data-aos-duration="3000">
-    <div class ="text-container">
-      <div class = "header-text">
-              <h1>Joshua Howitt</h1>
-              <p>Hi there, my name is Josh and welcome to my portfolio.
-                I am a Full Stack developer based in Kent, please feel free to take a look
-                at my previous work or get in touch via my details below.</p>
-      </div>
+    <div class ="landing-container">
+    <%= image_tag "Webdev.jpg", class: "landingimg"%>
     </div>
+ <div data-aos="fade-up" data-aos-duration="3000">
   </div>
 </div>
+
+<div id="about">
+  <div class="about-container">
+    <p class="title"> About Me </p>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="imagecontainer">
+            <%= image_tag "Joshua Howitt", class: "profileimg" %>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class = "header-text">
+            <h1>Joshua Howitt</h1>
+              <p>Hi there, my name is Josh and welcome to my portfolio,
+                I am a Full Stack developer based in Kent. I recently graduated from Leewagons Full-Stack developer Bootcamp.
+                Since graduating I have been focused on further devleoping my ruby backend skills
+                and learning Angular and React. Please feel free to take a look
+                at my previous work or get in touch via my details below. </p>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+
 <div id="projects">
   <p class="title"> Projects </p>
     <div class="project-container">
@@ -223,7 +243,7 @@
 </div>
 
 <div id="contact">
-  <div class="project-container">
+  <div class="contact-container">
     <p class="title"> contact </p>
     <h5>Please feel free to get in touch with me via the link below</h5>
     <a href="mailto:oluashegun@googlemail.com?subject=Contact via Website"><i class="far fa-envelope email"></i></a>

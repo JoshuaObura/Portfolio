@@ -1,45 +1,29 @@
+.navbar-lewagon {
+  justify-content: space-between;
+  background: transparent;
+   top: 0;
+   z-index: 100;
+  transition: background-color 1s ease 0s !important;
+}
 
-.sidenav {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
+.navbar.transparent {
+  background-color: transparent !important;
+  transition: background-color 1s ease 0s !important;
+  box-shadow: 0 0 1px white !important;
+}
+
+.navbar-lewagon .navbar-collapse {
+  flex-grow: 0;
+}
+
+.navbar-lewagon .navbar-brand img {
+  width: 40px;
+}
+
+.nav-link{
+  font-size: 18px;
+  //sets up hover
+  position: relative;
   top: 0;
-  left: 0;
-  background-color: transparent;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
-  box-shadow: 1px 1px #888888;
-}
-
-.sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-}
-
-.sidenav a:hover {
-  color: #f1f1f1;
-}
-
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-}
-
-#main {
-  transition: margin-left .5s;
-  padding: 16px;
-}
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+  transition: all .1s ease-in;
 }

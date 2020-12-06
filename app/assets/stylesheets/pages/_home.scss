@@ -1,39 +1,32 @@
 // Specific CSS for your home-page
-.text-container{
+/* .text-container{
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
-}
-
-.header-text{
-  text-align: center;
-  padding-left: 20%;
-  padding-right: 20%;
-}
+} */
 
 #home-link{
-  color:black;
+  color:white;
 }
 
 h1{
   font-size:5.5rem;
 }
 
-h5{
-  padding-bottom: 20px;
+h2{
+  text-align: center;
 }
 
-.project-container{
-  text-align: center;
-  padding-left: 20%;
-  padding-right: 20%;
+h5{
+  padding-bottom: 20px;
 }
 
 .title{
   text-align:center;
   font-size: 50px;
+  margin: 50px;
 }
 
 #resume{
@@ -50,78 +43,6 @@ h5{
   padding-top: 5%;
 }
 
-.email{
-  position: relative;
-  top: 0;
-  transition: top ease 0.5s;
-  font-size: 60px;
-  color: white;
-  padding-bottom: 20px;
+.contact-container{
+  text-align: center;
 }
-
-.email:hover{
-  top: -10px;
-}
-
-#contact{
-  height:70vh;
-}
-
-.project-text{
-  padding: 30px;
-}
-
-.project-link{
-  position: relative;
-  top:0;
-  transition: top ease 0.5s;
-  color: white;
-}
-
-.project-link:hover{
-  top:-10px;
-  color: white;
-}
-
-.contact-link-container{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  
-}
-    .contact-link1{
-      font-size: 50px;
-      position: relative;
-      top: 0;
-      transition: top ease 0.5s;
-      color: white;
-      padding-bottom: 20px;
-      padding-right: 20px;
-    }
-      .contact-link1:hover{
-        top: -10px;
-        color: white;
-      }
-
-      .contact-link2{
-        font-size: 50px;
-        position: relative;
-        top: 0;
-        transition: top ease 0.5s;
-        color: white;
-        padding-bottom: 20px;
-        padding-right: 20px;
-      }
-        .contact-link2:hover{
-          top: -10px;
-          color: white;
-        }
-    
-    .linkedin{
-      color: white;
-    }
-
-    .github{
-      color: white;
-    }

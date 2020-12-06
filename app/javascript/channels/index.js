@@ -39,3 +39,27 @@ $("a[href^='#']").click(function (e) {
     }
   }
 });
+
+/* Navbar transparent */
+/* $(document).ready(function() {
+  // Transition effect for navbar 
+  $(window).scroll(function() {
+    // checks if window is scrolled more than 500px, adds/removes solid class
+    if($(this).scrollTop() > 100) { 
+        $('.navbar-lewagon').addClass('transparent');
+    } else {
+        $('.navbar-lewagon').removeClass('transparent');
+    }
+  });
+}); */
+
+const navbar = document.querySelector('.navbar-lewagon');
+if (navbar) {
+  window.addEventListener('scroll', () => {
+    if (window.scrollY >= 1) {
+      navbar.classList.add('transparent');
+    } else {
+      navbar.classList.remove('transparent');
+    }
+  });
+}

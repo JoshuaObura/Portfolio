@@ -1,0 +1,61 @@
+
+.email{
+  position: relative;
+  top: 0;
+  transition: top ease 0.5s;
+  font-size: 60px;
+  color: white;
+  padding-bottom: 20px;
+}
+
+.email:hover{
+  top: -10px;
+}
+
+#contact{
+  height:70vh;
+}
+
+
+.contact-link-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  
+}
+    .contact-link1{
+      font-size: 50px;
+      position: relative;
+      top: 0;
+      transition: top ease 0.5s;
+      color: white;
+      padding-bottom: 20px;
+      padding-right: 20px;
+    }
+      .contact-link1:hover{
+        top: -10px;
+        color: white;
+      }
+
+      .contact-link2{
+        font-size: 50px;
+        position: relative;
+        top: 0;
+        transition: top ease 0.5s;
+        color: white;
+        padding-bottom: 20px;
+        padding-right: 20px;
+      }
+        .contact-link2:hover{
+          top: -10px;
+          color: white;
+        }
+    
+    .linkedin{
+      color: white;
+    }
+
+    .github{
+      color: white;
+    }
