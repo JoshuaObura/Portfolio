@@ -1,0 +1,39 @@
+.project-text{
+  padding: 30px;
+  text-align: center;
+}
+
+.project-link{
+  position: relative;
+  top:0;
+  transition: top ease 0.5s;
+  color: white;
+}
+
+.project-link:hover{
+  top:-10px;
+  color: white;
+}
+
+@media (max-width:1800px){
+  .project-text{
+    margin: 0 20%;
+  }
+}
+
+@media (max-width:980px){
+  .project-text{
+    margin: 0 15%;
+  }
+}
+
+@media (max-width:780px){
+  .project-text{
+    margin: 0 10%;
+  }
+}
+@media (max-width:480px){
+  .project-text{
+    margin: 0 5%;
+  }
+}
