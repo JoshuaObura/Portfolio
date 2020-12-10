@@ -9,6 +9,12 @@
   width: 100%;
 }
 
+@media (max-width:3000px){
+  .about-container{
+    margin: 10% 20%;
+  }
+}
+
 @media (max-width:1800px){
   .about-container{
     margin: 10% 20%;
