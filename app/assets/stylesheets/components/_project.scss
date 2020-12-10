@@ -15,6 +15,12 @@
   color: white;
 }
 
+@media (max-width:3000px){
+  .project-text{
+    margin: 0 25%;
+  }
+}
+
 @media (max-width:1800px){
   .project-text{
     margin: 0 20%;
